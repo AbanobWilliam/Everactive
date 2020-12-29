@@ -1,0 +1,373 @@
+$color-04: #040c15;
+$color-13: #132e4c;
+$color-ef: #ef6912;
+$color-2a: #2a5686;
+$font-16: 16px;
+$font-35: 35px;
+$font-20: 20px;
+$font-17: 17px;
+$font-13: 13px;
+$font-14: 14px;
+@font-face{
+    font-family: m-b;
+    src:url('../fonts/Montserrat-Bold_0.otf');
+}
+@font-face{
+    font-family: m-sb;
+    src:url('../fonts/Montserrat-SemiBold.otf');
+}
+@font-face{
+    font-family: o-sb;
+    src:url('../fonts/OpenSans-Semibold_0.ttf');
+}
+@mixin transition(){
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+}
+/* general */
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+a,a:hover,a:active,a:focus,
+button,button:hover,button:active,button:focus,
+input,input:hover,input:active,input:focus,
+textarea,textarea:hover,textarea:active,textarea:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+
+/*// general */
+/* header */
+/* header top */
+header{
+    background: $color-04;
+    overflow: hidden;
+    div.header-top{
+        padding: 17px;
+        div.contact{
+            padding-top: 20px;
+            flex: 0 1 calc(50% - 73px);
+            div.social{
+                ul li a{
+                    margin-right: 14px;
+                    width: 40px;
+                    height: 40px;
+                    color: $color-04;
+                    background: #fff;
+                    display: block;
+                    line-height: 40px;
+                    font-size: 25px;
+                    text-align: center;
+                    border-radius: 50%;
+                    @include transition;
+                }
+                ul li:last-child a{
+                    margin-right: 0px;
+                }
+                ul li a:hover{
+                    background: $color-2a;
+                    color:#fff;
+                }
+            }
+            div.call-us{
+                font-size: 16px;
+                font-family: m-b;
+                color: #fff;
+                margin-top: 27px;
+            }
+        }
+    }
+    div.header-bottom{
+        margin-bottom: 9px;
+        ul li a{
+            font-size: 16px;
+            color: #fff;
+            font-family: m-b;
+            @include transition;
+        }
+        ul li a:hover{
+            color:$color-2a;
+        }
+    }
+}
+
+/* header top */
+.carousel-caption{
+    bottom: calc(50% - 42px);
+    h2{
+        font-size:35px;
+        text-transform: uppercase;
+    }
+}
+.carousel-indicators li{
+    background: transparent;
+    border: 2px solid #fff;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+}
+/*// header */
+/* about us */
+section.about-us{
+    padding: 45px 0px;
+    background: url('../imgs/about-us.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    h2{
+        font-size: 20px;
+        color: #fff;
+        font-family: m-sb;
+        margin-bottom: 45px;
+    }
+    div.white-logo{
+        margin-bottom: 122px;
+    }
+    p{
+        color: #fff;
+        margin: 0px 33px;
+        font-size: 18px;
+        font-family: o-sb;
+    }
+}
+/*// about us */
+/* our brands */
+section.our-brands{
+    padding: 0px 24px;
+    div.content{
+        padding: 45px 0px;
+        border-bottom: 3px solid #dedede;
+        h2{
+            margin-bottom: 17px;
+            font-size: 20px;
+            color: $color-04;
+            font-family: m-sb;
+        }
+        div.brands-images{
+            margin-top: 8px;
+        }
+        p{
+            margin-top: 17px;
+            font-size: 17px;
+            color: $color-04;
+            font-family: o-sb;
+        }
+    }
+}
+/*// our brands */
+/* cycle clothes */
+section.cycle-clothes{
+    padding: 45px 0px;
+    div.content{
+        padding: 0px 24px;
+    }
+    h2{
+        font-size: 20px;
+        color: $color-04;
+        margin-bottom: 20px;
+        font-family: m-sb;
+    }
+    p{
+        font-size: 17px;
+        color: $color-04;
+        font-family: o-sb;
+        margin-bottom: 40px;
+    }
+    h3{
+        font-size: 20px;
+        color: $color-04;
+        margin: 24px 0px;
+    }
+    div.cycle-video{
+        position: relative;
+        a.overlay{
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            font-size: 200px;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    }
+}
+/*// cycle clothes */
+/* sporcks */
+section.sporcks{
+    div.content{
+        padding: 45px 0px;
+        border-bottom: 3px solid #dedede;
+        div.sporcks-imgs{
+            margin-bottom: 14px;
+        }
+        ul{
+            margin-top: 20px;
+            font-size: 17px;
+            color: $color-04;
+            font-family: o-sb;
+        }
+    }
+}
+/*// sporcks */
+/* Location */
+section.location{
+    padding: 45px 0px 0px 0px;
+    h2{
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: $color-04;
+        font-family: m-sb;
+    }
+}
+/*// Location*/
+/* contact */
+section.contact{
+    padding: 45px 0px;
+    background: url('../imgs/contact-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    h2{
+        font-size: 20px;
+        color: #fff;
+        font-family: m-sb;
+        margin-bottom: 20px;
+    }
+    div{
+        font-size:17px;
+        color: #fff;
+        font-family: m-sb;
+    }
+}
+/*// contact */
+/* footer */
+footer{
+    background: $color-04;
+    padding: 65px 0px 34px 0px;
+    div.footer-top{
+        div.footer-logo{
+            div.img{
+                margin-bottom: 27px;
+            }
+            p{
+                color: #fff;
+                font-family: o-sb;
+                font-size: 16px;
+            }
+        }
+        div.mail{
+            h2{
+                font-size: 18px;
+                color: #fff;
+                font-family: m-sb;
+            }
+            div.mail-form{
+                margin-top: 28px;
+                input[type="email"]{
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 6px;
+                    border: none;
+                    background: #132e4c;
+                    padding-left: 21px;
+                    font-size: 13px;
+                    font-family: o-sb;
+                }
+                ::placeholder{
+                    color: #fff;
+                }
+                ::-ms-placeholder{
+                    color: #fff;
+                }
+                ::-webkit-placeholder{
+                    color: #fff;
+                }
+                ::-moz-placeholder{
+                    color: #fff;
+                }
+                input[type="submit"]{
+                    padding: 0px 14px;
+                    height: 40px;
+                    line-height: 40px;
+                    background: #ef6912;
+                    color: #fff;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 13px;
+                    font-family: m-sb;
+                    margin-left: 16px;
+                }
+            }
+        }
+        div.footer-social{
+            h2{
+                font-size: 16px;
+                color: #fff;
+                font-family: m-sb;
+                margin-bottom: 29px;
+            }
+            ul{
+                margin-bottom: 32px;
+                li{
+                    margin-right: 14px;
+                    a{
+                        display: block;
+                        height: 38px;
+                        width: 38px;
+                        line-height: 38px;
+                        text-align: center;
+                        font-size: 23px;
+                        color: $color-04;
+                        background: #2a5686;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            div.go-up{
+                a{
+                    color: #fff;
+                    font-size: 17px;
+                    i{
+                        color: #2a5686;
+                        font-size: 25px;
+                        margin-top: 2px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+    div.footer-bottom{
+        margin-top: 36px;
+        ul{
+            li{
+                a{
+                    color: #fff;
+                    font-family: m-b;
+                    font-size: 16px;
+                    @include transition;
+                }
+                a:hover{
+                    color: #132e4c;
+                }
+                span{
+                    display: block;
+                    width: 3px;
+                    height: 16px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+/*// footer */

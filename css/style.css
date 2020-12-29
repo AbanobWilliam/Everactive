@@ -1,0 +1,296 @@
+@font-face {
+  font-family: m-b;
+  src: url("../fonts/Montserrat-Bold_0.otf"); }
+@font-face {
+  font-family: m-sb;
+  src: url("../fonts/Montserrat-SemiBold.otf"); }
+@font-face {
+  font-family: o-sb;
+  src: url("../fonts/OpenSans-Semibold_0.ttf"); }
+/* general */
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+a, a:hover, a:active, a:focus,
+button, button:hover, button:active, button:focus,
+input, input:hover, input:active, input:focus,
+textarea, textarea:hover, textarea:active, textarea:focus {
+  text-decoration: none;
+  outline: none; }
+
+/*// general */
+/* header */
+/* header top */
+header {
+  background: #040c15;
+  overflow: hidden; }
+  header div.header-top {
+    padding: 17px; }
+    header div.header-top div.contact {
+      padding-top: 20px;
+      flex: 0 1 calc(50% - 73px); }
+      header div.header-top div.contact div.social ul li a {
+        margin-right: 14px;
+        width: 40px;
+        height: 40px;
+        color: #040c15;
+        background: #fff;
+        display: block;
+        line-height: 40px;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 50%;
+        transition: all ease-in-out 0.3s;
+        -webkit-transition: all ease-in-out 0.3s;
+        -moz-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        -ms-transition: all ease-in-out 0.3s; }
+      header div.header-top div.contact div.social ul li:last-child a {
+        margin-right: 0px; }
+      header div.header-top div.contact div.social ul li a:hover {
+        background: #2a5686;
+        color: #fff; }
+      header div.header-top div.contact div.call-us {
+        font-size: 16px;
+        font-family: m-b;
+        color: #fff;
+        margin-top: 27px; }
+  header div.header-bottom {
+    margin-bottom: 9px; }
+    header div.header-bottom ul li a {
+      font-size: 16px;
+      color: #fff;
+      font-family: m-b;
+      transition: all ease-in-out 0.3s;
+      -webkit-transition: all ease-in-out 0.3s;
+      -moz-transition: all ease-in-out 0.3s;
+      -o-transition: all ease-in-out 0.3s;
+      -ms-transition: all ease-in-out 0.3s; }
+    header div.header-bottom ul li a:hover {
+      color: #2a5686; }
+
+/* header top */
+.carousel-caption {
+  bottom: calc(50% - 42px); }
+  .carousel-caption h2 {
+    font-size: 35px;
+    text-transform: uppercase; }
+
+.carousel-indicators li {
+  background: transparent;
+  border: 2px solid #fff;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%; }
+
+/*// header */
+/* about us */
+section.about-us {
+  padding: 45px 0px;
+  background: url("../imgs/about-us.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  section.about-us h2 {
+    font-size: 20px;
+    color: #fff;
+    font-family: m-sb;
+    margin-bottom: 45px; }
+  section.about-us div.white-logo {
+    margin-bottom: 122px; }
+  section.about-us p {
+    color: #fff;
+    margin: 0px 33px;
+    font-size: 18px;
+    font-family: o-sb; }
+
+/*// about us */
+/* our brands */
+section.our-brands {
+  padding: 0px 24px; }
+  section.our-brands div.content {
+    padding: 45px 0px;
+    border-bottom: 3px solid #dedede; }
+    section.our-brands div.content h2 {
+      margin-bottom: 17px;
+      font-size: 20px;
+      color: #040c15;
+      font-family: m-sb; }
+    section.our-brands div.content div.brands-images {
+      margin-top: 8px; }
+    section.our-brands div.content p {
+      margin-top: 17px;
+      font-size: 17px;
+      color: #040c15;
+      font-family: o-sb; }
+
+/*// our brands */
+/* cycle clothes */
+section.cycle-clothes {
+  padding: 45px 0px; }
+  section.cycle-clothes div.content {
+    padding: 0px 24px; }
+  section.cycle-clothes h2 {
+    font-size: 20px;
+    color: #040c15;
+    margin-bottom: 20px;
+    font-family: m-sb; }
+  section.cycle-clothes p {
+    font-size: 17px;
+    color: #040c15;
+    font-family: o-sb;
+    margin-bottom: 40px; }
+  section.cycle-clothes h3 {
+    font-size: 20px;
+    color: #040c15;
+    margin: 24px 0px; }
+  section.cycle-clothes div.cycle-video {
+    position: relative; }
+    section.cycle-clothes div.cycle-video a.overlay {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #fff;
+      font-size: 200px;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%); }
+
+/*// cycle clothes */
+/* sporcks */
+section.sporcks div.content {
+  padding: 45px 0px;
+  border-bottom: 3px solid #dedede; }
+  section.sporcks div.content div.sporcks-imgs {
+    margin-bottom: 14px; }
+  section.sporcks div.content ul {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #040c15;
+    font-family: o-sb; }
+
+/*// sporcks */
+/* Location */
+section.location {
+  padding: 45px 0px 0px 0px; }
+  section.location h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #040c15;
+    font-family: m-sb; }
+
+/*// Location*/
+/* contact */
+section.contact {
+  padding: 45px 0px;
+  background: url("../imgs/contact-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  section.contact h2 {
+    font-size: 20px;
+    color: #fff;
+    font-family: m-sb;
+    margin-bottom: 20px; }
+  section.contact div {
+    font-size: 17px;
+    color: #fff;
+    font-family: m-sb; }
+
+/*// contact */
+/* footer */
+footer {
+  background: #040c15;
+  padding: 65px 0px 34px 0px; }
+  footer div.footer-top div.footer-logo div.img {
+    margin-bottom: 27px; }
+  footer div.footer-top div.footer-logo p {
+    color: #fff;
+    font-family: o-sb;
+    font-size: 16px; }
+  footer div.footer-top div.mail h2 {
+    font-size: 18px;
+    color: #fff;
+    font-family: m-sb; }
+  footer div.footer-top div.mail div.mail-form {
+    margin-top: 28px; }
+    footer div.footer-top div.mail div.mail-form input[type="email"] {
+      width: 200px;
+      height: 40px;
+      border-radius: 6px;
+      border: none;
+      background: #132e4c;
+      padding-left: 21px;
+      font-size: 13px;
+      font-family: o-sb; }
+    footer div.footer-top div.mail div.mail-form ::placeholder {
+      color: #fff; }
+    footer div.footer-top div.mail div.mail-form ::-ms-placeholder {
+      color: #fff; }
+    footer div.footer-top div.mail div.mail-form ::-webkit-placeholder {
+      color: #fff; }
+    footer div.footer-top div.mail div.mail-form ::-moz-placeholder {
+      color: #fff; }
+    footer div.footer-top div.mail div.mail-form input[type="submit"] {
+      padding: 0px 14px;
+      height: 40px;
+      line-height: 40px;
+      background: #ef6912;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-family: m-sb;
+      margin-left: 16px; }
+  footer div.footer-top div.footer-social h2 {
+    font-size: 16px;
+    color: #fff;
+    font-family: m-sb;
+    margin-bottom: 29px; }
+  footer div.footer-top div.footer-social ul {
+    margin-bottom: 32px; }
+    footer div.footer-top div.footer-social ul li {
+      margin-right: 14px; }
+      footer div.footer-top div.footer-social ul li a {
+        display: block;
+        height: 38px;
+        width: 38px;
+        line-height: 38px;
+        text-align: center;
+        font-size: 23px;
+        color: #040c15;
+        background: #2a5686;
+        border-radius: 50%; }
+  footer div.footer-top div.footer-social div.go-up a {
+    color: #fff;
+    font-size: 17px; }
+    footer div.footer-top div.footer-social div.go-up a i {
+      color: #2a5686;
+      font-size: 25px;
+      margin-top: 2px;
+      margin-right: 8px; }
+  footer div.footer-bottom {
+    margin-top: 36px; }
+    footer div.footer-bottom ul li a {
+      color: #fff;
+      font-family: m-b;
+      font-size: 16px;
+      transition: all ease-in-out 0.3s;
+      -webkit-transition: all ease-in-out 0.3s;
+      -moz-transition: all ease-in-out 0.3s;
+      -o-transition: all ease-in-out 0.3s;
+      -ms-transition: all ease-in-out 0.3s; }
+    footer div.footer-bottom ul li a:hover {
+      color: #132e4c; }
+    footer div.footer-bottom ul li span {
+      display: block;
+      width: 3px;
+      height: 16px;
+      background: #fff; }
+
+/*// footer */
+
+/*# sourceMappingURL=style.css.map */
